@@ -1,19 +1,21 @@
 # NoSpam
 Project Description
 •	Project Setup
-Step1:- Download the zipped file from https://drive.google.com/file/d/1foxp9k3oM7d9Ox77Zg-fjXLpvmCbhZYw/view?usp=sharing
-Step2:- Open your Code Editor and cd over to the project directory
-Step3:- npm install (Note system requires node.js & postgres)
-Step4:- npm start (to run the code)
-Step5:- npm run dev (to test the code with morgan logs)
+Step1:- Download the zipped file from https://drive.google.com/file/d/1foxp9k3oM7d9Ox77Zg-fjXLpvmCbhZYw/view?usp=sharing.
+Step2:- Open your Code Editor and cd over to the project directory.
+Step3:- npm install (Note system requires node.js & postgres).
+Step4:- npm start (to run the code).
+Step5:- npm run dev (to test the code with morgan logs).
 Step6:- In config/config.json add username,password, database according to your configurations.
 
 
 •	API Endpoints
+
 BaseUrl:- https://localhost/3000
 | HTTP Verbs | Endpoints | Action |
 
 Authentication Routes
+
 1) | POST | /api/v1/auth/signup | To sign up a new user account |: -Body: - {
 “username”: “your_username”, 
 “email”: “your_email”, 
@@ -30,6 +32,7 @@ Body: - {
 
 
 Users Routes(Testing)
+
 3)| GET | /api/v1/users/ | To get all the users for testing/ Data Population |
 
 4)| POST | /api/v1/users/contact| To add contacts to user db|:- 
@@ -38,6 +41,7 @@ Body:-  {
 }
 
 Spam Route
+
 4)| GET | /api/v1/spam/ | To retrieve all globally marked spams |
 
 5)| POST | /api/v1/spam/ | To mark spam to a particular number globally i.e in directory |: -
